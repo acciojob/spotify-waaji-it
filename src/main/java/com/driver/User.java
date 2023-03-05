@@ -1,16 +1,18 @@
 package com.driver;
 
-import java.util.List;
+import java.util.*;
 
 public class User {
     private String name;
     private String mobile;
+    private List<Song> likedSongs;
 
-    public User() {}
+    public User() {this.likedSongs = new ArrayList<>();}
 
     public User(String name, String mobile) {
         this.name = name;
         this.mobile = mobile;
+        this.likedSongs = new ArrayList<>();
     }
 
     public String getName() {
@@ -28,4 +30,5 @@ public class User {
     public void setMobile(String mobile) {
         this.mobile = mobile;
     }
+
 }

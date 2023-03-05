@@ -1,14 +1,13 @@
 package com.driver;
 
 import java.util.Date;
-import java.util.List;
 
 public class Album {
     private String title;
     private Date releaseDate;
 
     public Album(){
-
+     title=title;
     }
 
     public Album(String title){
@@ -31,4 +30,5 @@ public class Album {
     public void setReleaseDate(Date releaseDate) {
         this.releaseDate = releaseDate;
     }
+
 }
